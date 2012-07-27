@@ -2,8 +2,7 @@ JQueryUI-Days-From-Now
 ======================
 
 Add number of days from now display with any jQuery UI datepicker.
-![Days From Now Screenshot](./JqueryUI-Days-From-Now/raw/master/rubymotion_cookbook.png
-"Days From Now")
+![Days From Now Screenshot](./JqueryUI-Days-From-Now/raw/master/dfn.PNG "Days From Now")
 
 This horrible bloat of a hack is a modification of [The JQuery UI Timepicker Add On](https://github.com/trentrichardson/jQuery-Timepicker-Addon).
 Using the aforementioned code, I modified the JQuery UI picker (theme friendly) to show the number of days from the current date.  This is useful 
