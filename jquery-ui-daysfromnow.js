@@ -343,6 +343,8 @@ $.extend(Dfnpicker.prototype, {
 			dfn = 1;
 			var today = new Date();
 			var endDate = $.datepicker.parseDate("mm/dd/yy", selectedDate)
+			if (endDate == null)
+				endDate = today;
 			var difference = endDate.getTime() - today.getTime();
 			dfn = Math.ceil(difference/ONE_DAY);
 		}
@@ -1262,7 +1264,7 @@ $.datepicker.parseDate = function(format, value, settings) {
 			date = this._base_parseDate(format, value.substring(0,value.length-(err.length-err.indexOf(':')-2)), settings);
 		} else {
 			// The underlying error was not related to the time
-			throw err;
+			//throw err;
 		}
 	}
 	return date;
